@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>Backend Dev Portfolio</title>         
+        <meta name="description" content="Portfolio of a backend developer specializing in FastAPI, Spring boot, and scalable APIs."/> 
+        <link rel="stylesheet" href="styles.css"/> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/> 
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/> 
+    </head>     
+    <body> 
+        <body class="night">
+            <div class="container"> 
+                <header> 
+                    <h1>Hey👋, I&apos;m Abdulrahim<br></h1> 
+                    <p><code id="typing"></code></p> 
+                    <!-- <button id="theme-toggle" aria-label="Toggle Theme">🌓</button> -->
+                    <li id="theme-toggle" aria-label="Toggle Theme"> 
+                        <i class="fas fa-sun sun-icon"></i> 
+                        <i class="fas fa-moon moon-icon"></i> 
+                    </li>                     
+                </header>                 
+                <section id="about">
+                    <h2>About Me</h2>
+                    <blockquote style="padding-right: 0px; margin-right: -15px; margin-left: -15px;">
+                        I’m a backend developer who mostly works with Java and Spring Boot. I enjoy building APIs that are 
+                        fast, reliable, and not a total pain to maintain. I care a lot about clean code, solid structure, and making
+                        sure things actually work in production. Outside of coding, I’m probably messing with some side project, 
+                        reading docs I didn’t mean to read, or making coffee I forgot I made.
+</blockquote>
+                </section>
+                <section id="project-list"> 
+                    <h2>🛠️ Projects</h2> 
+                    <p class="coming-soon">Working on some cool stuff — stay tuned!</p> 
+                </section>                 
+            </div>
+            <script src="js/projects.js"></script>             
+            <script src="js/toggle-theme.js"></script>             
+            <script src="js/typing.js"></script>             
+            <script src="js/observer.js"></script>             
+            <script defer src="js/form.js"></script>             
+            <script defer src="js/main.js"></script>             
+            <section id="contact" class="contact"> 
+                <h2>Contact</h2> 
+                <form id="contact-form"> 
+                    <input type="text" placeholder="Your Name" required/> 
+                    <input type="email" placeholder="Your Email" required/> 
+                    <textarea placeholder="Your Message" required></textarea> 
+                    <button type="submit">Send</button>                     
+                    <p id="form-status"></p> 
+                </form>                 
+                <div class="social-icons"> 
+                    <a href="https://github.com/Abdulrahim-M" target="_blank"><i class="fab fa-github"></i></a> 
+                    <a href="https://linkedin.com/in/abdulrahim-abdulazim" target="_blank"><i class="fab fa-linkedin"></i></a> 
+                    <a href="#"><i class="fab fa-telegram"></i></a> 
+                    <a href="mailto:unvacc80@gmail.com" target="_blank"> <i class="fas fa-envelope"></i> </a>
+                </div>
+            </section>             
+            <footer>&copy; 2025 Abdulrahim-M | Backend Developer
+</footer>             
+        </body>         
+</html>
