@@ -5,59 +5,97 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
         <title>Backend Dev Portfolio</title>         
         <meta name="description" content="Portfolio of a backend developer specializing in FastAPI, Spring boot, and scalable APIs."/> 
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css"/> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/> 
         <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/> 
+        <link rel="stylesheet" href="themify-icons/css/themify-icons.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coral+Pixels&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323&display=swap">
     </head>     
-    <body> 
-        <body class="night">
-            <div class="container"> 
-                <header> 
-                    <h1>Hey👋, I&apos;m Abdulrahim<br></h1> 
-                    <p><code id="typing"></code></p> 
-                    <!-- <button id="theme-toggle" aria-label="Toggle Theme">🌓</button> -->
-                    <li id="theme-toggle" aria-label="Toggle Theme"> 
-                        <i class="fas fa-sun sun-icon"></i> 
-                        <i class="fas fa-moon moon-icon"></i> 
-                    </li>                     
-                </header>                 
-                <section id="about">
-                    <h2>About Me</h2>
-                    <blockquote style="padding-right: 0px; margin-right: -15px; margin-left: -15px;">
-                        I’m a backend developer who mostly works with Java and Spring Boot. I enjoy building APIs that are 
-                        fast, reliable, and not a total pain to maintain. I care a lot about clean code, solid structure, and making
-                        sure things actually work in production. Outside of coding, I’m probably messing with some side project, 
-                        reading docs I didn’t mean to read, or making coffee I forgot I made.
-</blockquote>
-                </section>
-                <section id="project-list"> 
-                    <h2>🛠️ Projects</h2> 
-                    <p class="coming-soon">Working on some cool stuff — stay tuned!</p> 
-                </section>                 
+    <body class="dark-mode"> 
+        <header class="custom-navbar">
+            <div class="left-side">
+                <a id="nav-toggle" class="hamburger"> <span></span> <span></span> <span></span> </a> 
             </div>
-            <script src="js/projects.js"></script>             
-            <script src="js/toggle-theme.js"></script>             
-            <script src="js/typing.js"></script>             
-            <script src="js/observer.js"></script>             
-            <script defer src="js/form.js"></script>             
-            <script defer src="js/main.js"></script>             
-            <section id="contact" class="contact"> 
-                <h2>Contact</h2> 
-                <form id="contact-form"> 
-                    <input type="text" placeholder="Your Name" required/> 
-                    <input type="email" placeholder="Your Email" required/> 
-                    <textarea placeholder="Your Message" required></textarea> 
-                    <button type="submit">Send</button>                     
-                    <p id="form-status"></p> 
-                </form>                 
-                <div class="social-icons"> 
-                    <a href="https://github.com/Abdulrahim-M" target="_blank"><i class="fab fa-github"></i></a> 
-                    <a href="https://linkedin.com/in/abdulrahim-abdulazim" target="_blank"><i class="fab fa-linkedin"></i></a> 
-                    <a href="#"><i class="fab fa-telegram"></i></a> 
-                    <a href="mailto:unvacc80@gmail.com" target="_blank"> <i class="fas fa-envelope"></i> </a>
-                </div>
-            </section>             
-            <footer>&copy; 2025 Abdulrahim-M | Backend Developer
-</footer>             
-        </body>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <!-- <li class="item">
+                    <a class="link" href="#testmonial">Testimonial</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blog">Blog</a>
+                </li> -->
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a> 
+                </li>                 
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>             
+        </header>
+        <div class="container" id="home" style="margin-top: 120px;">
+            <h1 style="font-family: 'Fira Code', monospace; font-size: 43px; text-align: left;">Hey👋, I&apos;m Abdulrahim</h1>
+            <p id="typing-box" style="padding: 20px; border-radius: 10px; box-shadow: 1px 1px 5px 1px #656565;"><code id="typing" style="font-family: 'VT323', monospace; color: #19c439;"></code></p>
+        </div>
+        <section id="about" style="flex-wrap: wrap; display: flex; margin-left: 10%; margin-right: 10%; padding-left: auto; padding-right: auto;">
+            <img src="image.png" style="max-width: 400px; min-width: 300px; min-height: 200px; margin: auto;">
+            <div style="font-style: normal; direction: ltr; min-width: 100px; max-width: 500px; text-align: left; margin: auto;">
+                <p style="color: #a9a9a9; margin-bottom: auto; padding-bottom: auto; padding-top: auto; margin-top: auto; font-family: 'Fira Code', monospace;">Who am I?</p>
+                <h2 style="font-family: 'Fira Code', monospace; font-size: 24px; margin-top: auto; padding-top: auto; padding-bottom: auto; margin-bottom: auto;">About Me</h2>
+                <blockquote style="font-family: 'Fira Code', monospace; font-size: 14px; margin-left: 0;">
+                    I&apos;m a backend developer who mostly works with Java and Spring Boot. I enjoy building APIs that are 
+                    fast, reliable, and not a total pain to maintain. I care a lot about clean code, solid structure, and making
+                    sure things actually work in production. Outside of coding, I&apos;m probably messing with some side project, 
+                    reading docs I didn&apos;t mean to read, or making coffee I forgot I made.
+</blockquote>
+                <button class="btn-rounded btn btn-outline-primary mt-4" style="color: #7dacc4; border: 1px solid #7dacc4; border-radius: 20px; padding: 10px; background-color: rgba(255, 255, 255, 0);" id="CVButton">Download CV</button>
+            </div>
+        </section>
+        <div id="portfolio"> 
+            <p style="color: #a9a9a9; font-family: 'Fira Code', monospace; margin-top: auto; margin-left: auto; margin-right: auto; text-align: center;">What I do<h2 style="text-align: center; margin-top: auto; font-size: 24px; font-family: 'Fira Code', monospace;">Projects</h2></p> 
+            <section id="project-list" style="margin-right: 5%; margin-left: 5%;">
+                <p class="coming-soon">Working on some cool stuff — stay tuned!	</p> 
+            </section>
+        </div>
+        <section id="contact" class="contact"> 
+            <h2>Contact</h2> 
+            <form id="contact-form"> 
+                <input type="text" placeholder="Your Name" required/> 
+                <input type="email" placeholder="Your Email" required/> 
+                <textarea placeholder="Your Message" required></textarea> 
+                <button type="submit">Send</button>                 
+                <p id="form-status"></p> 
+            </form>             
+        </section>         
+        <footer class="footer"> 
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> © <a href="https://abdulrahim-m.github.io/">Abdulrahim-M</a></p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://linkedin.com/in/abdulrahim-abdulazim" class="link"><i class="ti-linkedin"></i></a>
+                <a href="https://github.com/Abdulrahim-M" class="link"><i class="ti-github"></i></a>
+                <a href="mailto:unvacc80@gmail.com" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+        <script src="js/projects.js"></script>         
+        <script src="js/toggle-theme.js"></script>         
+        <script src="js/typing.js"></script>         
+        <script src="js/observer.js"></script>         
+        <script src="js/form.js"></script>         
+        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/navbar.js"></script>
+    </body>     
 </html>

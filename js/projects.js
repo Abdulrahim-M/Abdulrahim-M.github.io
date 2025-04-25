@@ -1,4 +1,32 @@
 const projects = [
+    /*{
+  thumbnail: 'https://via.placeholder.com/150',
+    name: 'Project One',
+    link: 'https://example.com/project-one',
+    description: 'A web application that allows users to track their tasks and productivity.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Node.js']
+  },
+  {
+    thumbnail: '2.png',
+    name: 'Project Two',
+    link: 'https://example.com/project-two',
+    description: 'An e-commerce platform with a focus on user experience and product customization.',
+    tech: ['React', 'Redux', 'Node.js', 'MongoDB']
+  },
+  {
+    thumbnail: 'https://via.placeholder.com/150',
+    name: 'Project Three',
+    link: 'https://example.com/project-three',
+    description: 'A portfolio website built to showcase personal projects and achievements.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'React']
+  },
+  {
+    thumbnail: 'https://via.placeholder.com/150',
+    name: 'Project Four',
+    link: 'https://example.com/project-four',
+    description: 'A social media platform for connecting like-minded people around shared hobbies.',
+    tech: ['Vue.js', 'Firebase', 'CSS', 'Node.js']
+  } */
 ];
 
 const projectList = document.getElementById('project-list');
