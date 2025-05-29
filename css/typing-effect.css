@@ -1,0 +1,57 @@
+#typing {
+    font-family: monospace;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding-top: 0.1em; /* adjust slightly to optically center */
+    white-space: nowrap;
+    border-right: 2px solid currentColor;
+    overflow: hidden;
+}
+
+body.dark-mode #typing {
+    color: #17b502;
+}
+
+
+body.light-mode #typing {
+    color: #1c550b;
+}
+
+#typing-box {
+    display: flex;
+    align-items: center;   /* vertical centering */
+    justify-content: flex-start; /* or center, if you want horizontal centering */
+    padding: 10px;
+    border-radius: 2px;
+    border: 5px solid rgba(255, 255, 255, 0.03);
+    transition: background-color 0.3s ease;
+    min-height: 2em;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark mode background */
+body.dark-mode #typing-box {
+    background: #202020;
+    box-shadow:
+        inset 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+
+body.light-mode #typing-box {
+    background: #ffffff;
+    box-shadow:
+        inset 0 2px 5px rgba(0, 0, 0, 0.05),
+        inset 0 -2px 5px rgba(0, 0, 0, 0.02),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive font size on small screens */
+@media (max-width: 600px) {
+    #typing {
+        font-size: 0.9rem;
+    }
+
+    #typing-box {
+    padding: 5px;
+    }
+}

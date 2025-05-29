@@ -1,0 +1,18 @@
+
+.greating {
+    font-family: 'Fira Code', monospace;
+    font-size: 43px;
+    text-align: left;
+}
+
+@media (max-width: 991.98px) {
+    .greating {
+    font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .greating {
+    font-size: 24px;
+    }
+}
